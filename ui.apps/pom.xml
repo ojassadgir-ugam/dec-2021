@@ -61,11 +61,7 @@
                     <dependencies>
                         <dependency>
                             <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.content</artifactId>
-                        </dependency>
-                        <dependency>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.config</artifactId>
+                            <artifactId>core.wcm.components.all</artifactId>
                         </dependency>
                     </dependencies>
                 </configuration>
@@ -118,13 +114,6 @@
 
         <dependency>
             <groupId>com.personal</groupId>
-            <artifactId>personal.ui.frontend</artifactId>
-            <version>${project.version}</version>
-            <type>zip</type>
-        </dependency>
-
-        <dependency>
-            <groupId>com.personal</groupId>
             <artifactId>personal.ui.apps.structure</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
@@ -137,15 +126,9 @@
 
         <dependency>
             <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.content</artifactId>
+            <artifactId>core.wcm.components.all</artifactId>
             <type>zip</type>
         </dependency>
-        <dependency>
-            <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.config</artifactId>
-            <type>zip</type>
-        </dependency>
-
 
         <dependency>
             <groupId>com.adobe.aem</groupId>

@@ -82,22 +82,19 @@
                         </embedded>
                         <embedded>
                             <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.content</artifactId>
-                            <type>zip</type>
-                            <target>/apps/personal-vendor-packages/application/install</target>
-                        </embedded>
-                        <embedded>
-                            <groupId>com.adobe.cq</groupId>
                             <artifactId>core.wcm.components.core</artifactId>
                             <target>/apps/personal-vendor-packages/application/install</target>
                         </embedded>
-                        <embedded>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.config</artifactId>
-                            <type>zip</type>
-                            <target>/apps/personal-vendor-packages/application/install</target>
-                        </embedded>
+
                     </embeddeds>
+                    <subPackages>
+                        <subPackage>
+                             <groupId>com.adobe.cq</groupId>
+                             <artifactId>core.wcm.components.all</artifactId>
+                             <filter>true</filter>
+                        </subPackage>
+
+                    </subPackages>
                 </configuration>
             </plugin>
             <plugin>
@@ -207,12 +204,7 @@
 
         <dependency>
             <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.content</artifactId>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.config</artifactId>
+            <artifactId>core.wcm.components.all</artifactId>
             <type>zip</type>
         </dependency>
     </dependencies>
